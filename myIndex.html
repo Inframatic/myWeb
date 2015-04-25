@@ -1,0 +1,191 @@
+<html ng-app="MyWeb" lang="en" >
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+      <title>Ian Steffy</title>
+      <meta name="description" content="Ian Steffy, Direction Design Development" >
+      <!-- Facebook -->
+      <meta property="og:site_name" content="Ian Steffy">
+      <meta property="og:title" content="Ian Steffy">
+      <meta property="og:description" content="HTML5, JQUERY, CSS3, ANGULAR.JS">
+      <link href="myStyle.css" media="screen" rel="stylesheet">
+      <link href="img/ianLogo.png" rel="shortcut icon" type="img/ianLogo.png">
+
+      <style type="text/css"></style>
+      <style></style>
+      <script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/20/1/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/20/1/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/20/1/stats.js"></script>
+   </head>
+   <body ng-controller="MainControl" data-twttr-rendered="true" hola-ext-player="1">
+      <script type="text/javascript" async="" src="//platform.twitter.com/widgets.js"></script>
+      <section class="content">
+         <section>
+            <div id="page-title-header" class="home">
+               <div id="city-header-image">
+               </div>
+               <div class="myBannerSheets">
+               </div>
+               <img alt="Ian talking with Anish (he's super cool)" class="steffy-drop" src="img/myBanner.jpg">
+               <img alt="a door at the top of the mountain!" class="steffy-drop2" src="img/myBanner2.png">
+               <img alt="DEVELOPMENT. DESIGN. DIRECTION. " class="city-logo" src="img/myPitch.png">
+               <img alt="my webpage splashpage drop" class="city-drop" src="img/myBannerBlanket.png">
+               <button id="splash-registration-button" class="city-title-registration-button small-centered columns hide-for-medium-up">
+                  <div class="free-admin">                     
+                     <li> LET'S TALK </li>
+                  </div>
+                  <div class="register-now">CONTACT ME &gt;</div>
+               </button>
+            </div>
+         </section>
+         <!-- CITIES SELECTION -->
+         <div class="city-selection-wrapper show-for-medium-up">
+            <div id="vancouver-selector" class="city-selection-box outer">
+               <div class="selector">
+                  
+                     <h6 class="city-text vancouver" style="color: #f0ad4e">HTML5</h6>
+                     <div class="colored-block" style="background-color:#f0ad4e"></div>
+                
+               </div>
+            </div>
+            <div id="calgary-selector" class="city-selection-box">
+               <div class="selector">
+                  
+                     <h6 class="city-text calgary" style="color: #6b4d8d">JAVASCRIPT</h6>
+                     <div class="colored-block" style="background-color:#6b4d8d"></div>
+                  
+               </div>
+            </div>
+            <div id="london-selector" class="city-selection-box">
+               <div class="selector">
+             
+                     <h6 class="city-text london" style="color: #4F719D"
+                        >CSS3</h6>
+                     <div class="colored-block" style="background-color:#4F719D"></div>
+                
+               </div>
+            </div>
+            <div id="toronto-selector" class="city-selection-box outer">
+               <div class="selector">
+            
+                     <h6 class="city-text toronto" style="color: #29b783">JQuery</h6>
+                     <div class="colored-block" style="background-color:#29b783"></div>
+                 
+               </div>
+            </div>
+         </div>
+         <section id="image-scroll-wrapper" class="show-for-medium-up">
+            <div class="image-slideshow">
+               <div class="row">
+                  <div class="large-6 medium-7 small-centered columns">
+                     <a href="/register">
+                        <button id="splash-registration-button" class="city-title-registration-button">
+                           <div class="free-admin">                              
+                              <li> LET'S TALK</li>
+                           </div>
+                           <div class="register-now">CONTACT NOW &gt;</div>
+                        </button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="text-section show-for-large-up">               
+               <h4>Building responsive & effective web applications</h4>
+               <p class="pitch-text">Specializing in HTML5, CSS3, Responsive Design, Animation and Javascript</p>
+               <!-- <p class="pitch-text">I nail deadlines, and I stay within the budget. Sounds good? Let's <a href="skype:ian.steffy?call" style="color:#12A5F4;">Skype</a>.</p> -->
+            </div>
+         </section>
+         <div class="group"> 
+            <section class="featured work">
+               <h2>Portfolio</h2>
+               <ul class="three-up">
+                  <li ng-repeat="project in projects">
+                     <a href="http://some/url.com" style="background-color: #000">
+                        <img src="{{project.url}}" alt="">
+                     </a>
+                     <h3>{{project.description}}</h3>
+                  </li>
+               <!--    <li>
+                     <a href="http://some/url.com" style="background-color: #000">
+                        <img src="some/img/url.png" alt="Doge Dots">
+                     </a>
+                     <h3>XCode, ASO, Animation, Data Analytics</h3>
+                  </li>
+                  <li>
+                     <a href="http://some/url.com" style="background-color: #f1f1f2">
+                        <img src="some/img/url.png" alt="ViewPoint Cloud">
+                     </a>
+                     <h3>HTML5, CSS3, JQuery, Javascript, Ember, Handlebars</h3>
+                  </li> -->
+               </ul>
+            </section>
+         </div>
+      <nav id="header" class="fixed">
+         <!-- DESKTOP / LAPTOP -->
+         <div class="top-bar 12-large column show-for-large-up" data-topbar="" role="navigation">
+            <!-- NAV BAR -->
+            <div id="nav-image" class="small-4 columns row">
+               <a href="http://lighthouselabs.ca" target="_blank">
+                  <!-- <img alt="Lighthouse" class="lighthouse_image" src="http://html500.s3.amazonaws.com/assets/lighthouse-417e7b4a586ae2db4404e5f1a70ee5a1.png"> -->
+               </a>
+               <a href="/">
+               <p class="ian-steffy-signature" > {{name}}</p>
+               </a>    
+            </div>
+            <div id="site-navigation" class="large-push-5 column">
+               <button class="nav-button first" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">PORTFOLIO
+               <img alt="Down arrow" class="drop-down-arrow" src="http://html500.s3.amazonaws.com/assets/down-arrow-9e107f4854d7db776e22e5e9557bbfc5.png">
+               </button>
+               <ul id="drop1" class="f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                  <!--  <li><a class="dropdown first" href="/cities/montreal">Montreal</a></a></li> -->
+                  <li><a class="dropdown second" href="/cities/toronto">SkreensTV</a></li>
+                  <li><a class="dropdown third" href="/cities/vancouver">League of Legends </a></li>
+                  <li><a class="dropdown forth" href="/cities/london">ViewPoint Cloud</a></li>
+                  <li><a class="dropdown fifth" href="/cities/calgary">MLG</a></li>
+               </ul>
+               <a class="nav-button second" href="/info">MY INFO</a>
+               <a class="nav-button third" href="/faq">SKYPE ME</a> <!-- opens up skype -->
+               <a class="nav-button forth" href="/blogs">EMAIL ME</a>  
+               <!-- <a class="nav-button fifth" href="/work">WORK</a> -->
+               <div class="nav-line-wrapper">
+                  <hr class="nav-line first">
+                  <hr class="nav-line second">
+                  <hr class="nav-line third">
+                  <hr class="nav-line forth">
+                  <!-- <hr class="nav-line fifth"> -->
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- TABLET  -->
+      <section id="header" class="fixed">
+         <div class="mobile-nav">
+            <div class="top-bar 12-large column hide-for-large-up" data-topbar="" role="navigation">
+               <div id="nav-image">
+                  <img alt="Html500" class="html_500_image" src="img/ianLogo.png">
+                  </a>      
+               </div>
+               <a id="nav-toggle" class="menu-btn"><span></span></a>
+            </div>
+         </div>
+      </section>
+      <section class="touch-drop-down hide-for-large-up fixed">
+         <ul class="wrapper">
+            <li id="cities-selection">
+               CITIES
+            </li>
+            <a href="/partners">
+               <li>
+                  PORTFOLIO
+               </li>
+            </a>
+         </ul>
+      </section>
+
+      
+      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="https://raw.githubusercontent.com/lodash/lodash/3.7.0/lodash.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      <script src="app/myWeb-app.start.js"></script>
+   </body>
+</html>
