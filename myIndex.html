@@ -37,41 +37,6 @@
             </div>
          </section>
          <!-- CITIES SELECTION -->
-         <div class="city-selection-wrapper show-for-medium-up">
-            <div id="vancouver-selector" class="city-selection-box outer">
-               <div class="selector">
-                  
-                     <h6 class="city-text vancouver" style="color: #f0ad4e">HTML5</h6>
-                     <div class="colored-block" style="background-color:#f0ad4e"></div>
-                
-               </div>
-            </div>
-            <div id="calgary-selector" class="city-selection-box">
-               <div class="selector">
-                  
-                     <h6 class="city-text calgary" style="color: #6b4d8d">JAVASCRIPT</h6>
-                     <div class="colored-block" style="background-color:#6b4d8d"></div>
-                  
-               </div>
-            </div>
-            <div id="london-selector" class="city-selection-box">
-               <div class="selector">
-             
-                     <h6 class="city-text london" style="color: #4F719D"
-                        >CSS3</h6>
-                     <div class="colored-block" style="background-color:#4F719D"></div>
-                
-               </div>
-            </div>
-            <div id="toronto-selector" class="city-selection-box outer">
-               <div class="selector">
-            
-                     <h6 class="city-text toronto" style="color: #29b783">JQuery</h6>
-                     <div class="colored-block" style="background-color:#29b783"></div>
-                 
-               </div>
-            </div>
-         </div>
          <section id="image-scroll-wrapper" class="show-for-medium-up">
             <div class="image-slideshow">
                <div class="row">
@@ -93,12 +58,47 @@
                <!-- <p class="pitch-text">I nail deadlines, and I stay within the budget. Sounds good? Let's <a href="skype:ian.steffy?call" style="color:#12A5F4;">Skype</a>.</p> -->
             </div>
          </section>
+         <div class="city-selection-wrapper show-for-medium-up">
+            <div id="vancouver-selector" class="city-selection-box outer">
+               <div class="selector">
+                  
+                     
+                     <div class="colored-block" style="background-color:#f0ad4e"></div>
+                
+               </div>
+            </div>
+            <div id="calgary-selector" class="city-selection-box">
+               <div class="selector">
+                  
+                    
+                     <div class="colored-block" style="background-color:#6b4d8d"></div>
+                  
+               </div>
+            </div>
+            <div id="london-selector" class="city-selection-box">
+               <div class="selector">
+             
+                  
+                     <div class="colored-block" style="background-color:#4F719D"></div>
+                
+               </div>
+            </div>
+            <div id="toronto-selector" class="city-selection-box outer">
+               <div class="selector">
+            
+                     <h6 class="city-text toronto" style="color: #29b783">city shitty</h6>
+                     <div class="colored-block" style="background-color:#29b783"></div>
+                 
+               </div>
+            </div>
+         </div>
+         
          <div class="group"> 
             <section class="featured work">
                <h2>Portfolio</h2>
                <ul class="three-up">
                   <li ng-repeat="project in projects">
-                     <a href="http://some/url.com" style="background-color: #000">
+                     <a href="http://some/url.com" style="background-color: {{project.backgroundColor}};">
                         <img src="{{project.url}}" alt="">
                      </a>
                      <h3>{{project.description}}</h3>

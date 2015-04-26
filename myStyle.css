@@ -269,7 +269,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #image-scroll-wrapper {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 70px;
+  margin: 20px 0px 20px 0px;
 }
 
 #image-scroll-wrapper .image-slideshow {
@@ -315,12 +316,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 #image-scroll-wrapper .text-section {
-  position: absolute;
-  width: 60%;
+  width: 100%;
+  text-align: center;
   /* background-color: #4F719D; */
   top: 40px;
-  /*height: 132px;*/
+  /* height: 132px; */
   left: 22%;
+}
 }
 
 #image-scroll-wrapper h3 {
