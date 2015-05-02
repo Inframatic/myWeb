@@ -1,5 +1,4 @@
-angular.module('MyWeb', [
-  ])
+angular.module('MyWeb', [])
 .controller('MainControl', function($scope){
     $scope.name = 'Ian Steffy';
     $scope.projects = [

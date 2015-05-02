@@ -9285,7 +9285,7 @@ img.mfp-img {
     position: absolute;
     z-index: 10;
     left: 75px;
-    width: 150px;
+    width: 94px;
     height: auto;
   }
 }
@@ -10848,6 +10848,8 @@ textarea {
   opacity: 0.3;
 }
 
+/*---  FULL SCREEN BROWSER ---*/
+
 @media only screen and (min-width: 64.063em) {
   #page-title-header .city-drop {
     position: relative;
@@ -10867,23 +10869,25 @@ textarea {
   }
 }
 
+/*--- IPAD ---*/
 @media only screen and (min-width: 40em) and (max-width: 64.063em) {
   #page-title-header .city-drop {
     position: relative;
     overflow: hidden;
+    z-index: 1;
     top: 0;
     width: 100%;
-    min-width: 140%;
-    padding-right: 290px;
+    min-width: 100%;
+    padding-right: 200px;
     min-height: 500px;
   }
 
   #page-title-header .city-logo {
-    position: absolute;
-    width: 392px;
-    margin-top: 150px;
-    right: 29%;
-    z-index: 5;
+  position: absolute;
+  width: 365px;
+  margin-top: 150px;
+  right: 45%;
+  z-index: 5;
   }
 }
 
@@ -10901,7 +10905,7 @@ textarea {
     position: absolute;
     width: 392px;
     margin-top: 150px;
-    right: 2%;
+    left: 2%;
     z-index: 6;
   }
 }
@@ -10910,9 +10914,10 @@ textarea {
   position: absolute;
   overflow: hidden;
   float: right;
+  left: 0;
   border: solid #3a3a3c;
   z-index: 8;
-  width: 300px;
+  width: 200px;
   height: 40px;
   list-style-type: none;
   background-color: transparent;
@@ -10933,7 +10938,7 @@ textarea {
   float: right;
   background-color: #3a3a3c;
   color: white;
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding-top: 4%;
 }
