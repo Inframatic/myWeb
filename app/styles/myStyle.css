@@ -1,5 +1,38 @@
 /*--NEW vv--*/
 
+article .content .wpcf7 p {
+  margin-top: 1.4em;
+}
+
+.page .content p, .single .content p {
+  word-break: break-word;
+}
+
+.half {
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 481px) {
+  div .half {
+    display: inline-block;
+    zoom: 1;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 0;
+  }
+}
+
+#contact-section {
+  position:absolute;
+  top:0px;
+  width: 200px;
+  height:200px;
+
+  background-color:red;
+  z-index: 20;
+}
+
 .button[href], .button[href]:hover {
   color: white;
 }
@@ -8,7 +41,7 @@
   position: absolute;
   margin-top: 2px;
   right: 1%;
-  top: 9%;
+  top: 7%;
   font-size: 1.2em;
   z-index: 1;
 }
@@ -36,7 +69,9 @@
   transition: background-color 0.3s;
 }
 
-
+.send.button {
+  font-size: 1.4em;
+}
 
 a.button:hover {
   background-color: #4F719D;
@@ -59,6 +94,13 @@ a.button:hover {
   height: 24px;
   width: 24px;
   margin-top: -12px;
+}
+
+.button .fa {
+  position: absolute;
+  right: 14%;
+  top: 25%;
+  font-size: 1.4em;
 }
 
 .group:after {
@@ -195,16 +237,6 @@ section h3 {
   opacity:.55;
 }
 
-a {
-  color: #2098d1;
-  text-decoration: none;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -ms-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -223,7 +255,7 @@ html h1,html h2,html h3,html h4,html h5,html h6,body h1,body h2,body h3,body h4,
 html p,body p {
   font-family: "Lato",sans-serif;
   color: #636363;
-  font-size: 20px;
+  font-size: .8em;
   line-height: 1.8;
   letter-spacing: 0.8pt;
 }
@@ -2642,17 +2674,12 @@ button,.button {
   padding-top: 1rem;
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  /*padding-left: 2rem;*/
   font-size: 1rem;
-  background-color: white;
-  border-color: white;
   color: #333333;
   transition: background-color 300ms ease-out;
 }
 
-button:hover,button:focus,.button:hover,.button:focus {
-  background-color: white;
-}
 
 button:hover,button:focus,.button:hover,.button:focus {
   color: #333333;
@@ -10850,17 +10877,6 @@ textarea {
 
 .tooltip.cont-learning h5 {
   margin-top: 12%;
-}
-
-.timeline {
-  margin-left: -37px;
-  top: 84px;
-  width: 989px;
-  position: relative;
-}
-
-.timeline img {
-  width: 99%;
 }
 
 @media only screen and (max-width: 40em) {

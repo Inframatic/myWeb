@@ -1,1 +1,13 @@
-<h1>PORTFOLIO . HTML</h1>
+<div class="group">
+   <section class="featured work">
+      <h2>Portfolio</h2>
+      <ul class="three-up">
+         <li ng-repeat="project in projects">
+            <a href="#{{project.title}}" style="background-color: {{project.backgroundColor}};">
+               <img src="{{project.imgUrl}}" alt="">
+            </a>
+            <h3>{{project.description}}</h3>
+         </li>
+      </ul>
+   </section>
+</div>
