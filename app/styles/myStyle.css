@@ -1,5 +1,26 @@
 /*--NEW vv--*/
 
+.viewpoint-color{
+  background-color:#00a7e1;
+}
+
+.project.banner {
+  height:200px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.banner.logo.vpc {
+  height: 150px;
+  width: auto;
+
+}
+
+.project-section {
+  min-height: 400px;
+  background-color: black;
+}
+
 article .content .wpcf7 p {
   margin-top: 1.4em;
 }
@@ -12,6 +33,139 @@ article .content .wpcf7 p {
   margin-bottom: 1em;
 }
 
+
+/*lunn*/
+.intro.front {
+  display: table;
+  width: 100%;
+}
+
+.intro.front
+header {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0
+auto;
+  padding: 35px
+10px;
+}
+
+.intro.front
+h1 {
+  margin-bottom: .4em;
+  max-width: 100%;
+}
+
+.intro {
+  position: relative;
+  display: table;
+  width: 100%;
+  background: #eee;
+  text-align: center;
+}
+
+.intro
+h1 {
+  margin-bottom: .1em;
+  max-width: 680px;
+}
+
+.intro
+h2 {
+  padding-bottom: .2em;
+}
+
+.intro
+header {
+  text-align: left;
+}
+
+.intro.small {
+  height: 120px;
+}
+
+.intro .intro-content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 760px;
+  width: 100%;
+  margin: 0
+auto;
+  padding: 60px
+20px;
+  text-align: left;
+  display: table;
+}
+
+.intro .intro-content .featured-image,
+.intro .intro-content
+header {
+  display: table-cell;
+/* height:100% */;
+}
+
+.intro .intro-content
+img {
+  margin-bottom: 0;
+  max-height: 85px;
+}
+
+.intro .intro-content .featured-image {
+  display: none;
+  vertical-align: middle;
+  padding: 0
+20px 0 0;
+  text-align: center;
+}
+
+.intro .intro-content
+header {
+  vertical-align: top;
+  width: 100%;
+}
+
+.intro
+.button {
+  margin-top: 2em;
+}
+
+.intro
+.note {
+  margin-top: .6em;
+}
+/*lunn*/
+
+@media only screen and (min-width: 721px) {
+  .page .intro .intro-content header.with-image div, .single .intro .intro-content header.with-image div {
+    border-left: black solid 3px;
+    padding-left: 20px;
+  }
+  .header-divider {
+    border-left: black solid 3px;
+    padding-left: 20px;
+  }
+  .intro .intro-content .featured-image {
+    display: table-cell;
+  }
+  .page .intro .intro-content header.with-image, .single .intro .intro-content header.with-image {
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 981px) {
+  .intro .intro-content {
+    max-width: 1150px;
+  }
+}
+
+@media only screen and (max-height: 460px) and (orientation: landscape) {
+  .intro {
+    margin-top: 0;
+  }
+}
 @media only screen and (min-width: 481px) {
   div .half {
     display: inline-block;
@@ -6695,91 +6849,6 @@ blockquote,blockquote p {
   padding: 0 0.0625rem;
 }
 
-@media only screen and (min-width: 40.063em) {
-  h1,h2,h3,h4,h5,h6 {
-    line-height: 1.4;
-  }
-
-  h1 {
-    font-size: 2.75rem;
-  }
-
-  h2 {
-    font-size: 2.3125rem;
-  }
-
-  h3 {
-    font-size: 1.6875rem;
-  }
-
-  h4 {
-    font-size: 1.4375rem;
-  }
-
-  h5 {
-    font-size: 1.125rem;
-  }
-
-  h6 {
-    font-size: 1rem;
-  }
-}
-
-.print-only {
-  display: none !important;
-}
-
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,blockquote {
-    border: 1px solid #999999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }@  page {
-    margin: 0.5cm;
-  }
-
-  p,h2,h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,h3 {
-    page-break-after: avoid;
-  }
 
   .hide-on-print {
     display: none !important;
@@ -12815,3 +12884,23 @@ textarea {
     left: 20px;
   }
 }
+
+
+
+
+
+
+/*lunn below*/
+
+/*lunn end*/
+
+
+
+
+
+
+
+
+
+
+

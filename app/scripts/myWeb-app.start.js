@@ -1,17 +1,34 @@
 angular.module('MyWeb', ['ngRoute'])
-  .config( ['$routeProvider', function($routeProvider) {
+  .config( ['$routeProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/portfolio', {
-            templateUrl: '/myWebpage/app/templates/portfolio.html'
+            templateUrl: '/myWebpage/app/templates/portfolio.html',
+            controller:'MainControl'
         })
         .when('/contact', {
-            templateUrl: '/myWebpage/app/templates/contact.html'
+            templateUrl: '/myWebpage/app/templates/contact.html',
+            controller:'MainControl'
         })
+        .when('/:linkUrl', {
+            templateUrl: '/myWebpage/app/templates/project.html',
+            controller:'MainControl'
+        })
+        // .when('/dogedots', {
+        //     templateUrl: '/myWebpage/app/templates/project.html',
+        //     controller:'MainControl'
+        // })
+        // .when('/skreens', {
+        //     templateUrl: '/myWebpage/app/templates/project.html',
+        //     controller:'MainControl'
+        // })
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/',
+            templateUrl: '/myWebpage/app/templates/portfolio.html',
+            controller:'MainControl'
         })
   }])
-  .controller('MainControl', function($scope){
+  .controller('MainControl', function($scope, $routeParams){
+      $scope.linkUrl=$routeParams.linkUrl;
       $scope.name = 'Ian Steffy';
       $scope.projects = [
         { "id": 0, "linkUrl": "skreens", "title": "Skreens", "imgUrl": "img/skreensTV-logo.png", "description": "HTML5, CSS3, Responsive, Design, jQuery", "backgroundColor" : "#000"},
