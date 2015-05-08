@@ -676,7 +676,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 /*Footer stuff*/
-@media only screen and (min-width: 981px) {
+/*@media only screen and (min-width: 981px) {
+  .footer.group nav.third:nth-child(3n+3) {
+  margin: 0;
+  }
   .links {
     margin-bottom: 4em;
   }
@@ -692,6 +695,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 @media only screen and (min-width: 681px) {
+  .footer.group nav.third {
+  margin-bottom: .4em;
+  }
+  .social-links .rss {
+  display: block;
+  }
   .footer.group {
     padding-top: 4em;
   }
@@ -710,11 +719,52 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .social-links {
   border-bottom: 0;
   }
+  .social-links .icon.social {
+  margin: 0 10px 0 0;
+  }
+  .social-links .icon.social, .social-links p {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  }
 }
 @media only screen and (min-width: 581px){
   .back-to-top {
     text-align: right;
   }
+}
+
+.social-links li {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.social-links li, .social-links dd {
+  margin-bottom: 1.6em;
+}
+.icon.github {
+  background-position: -96px 0;
+}
+.social-links .icon.social {
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto 10px auto;
+}
+.icon.twitter {
+  background-position: -97px -37px;
+}
+.back-to-top:before, .button:after, .form-submit:after, .icon.social, .newer-posts:before, .older-posts:after {
+  background-image: url("/wp-content/themes/ianlunn2015/images/sprites.png");
+  background-repeat: no-repeat;
+}
+.icon {
+  background-color: transparent;
+  overflow: hidden;
+}
+.footer.group li, .footer.group dd {
+  margin-bottom: 1.6em;
 }
 ol, ul {
   list-style: none;
@@ -785,7 +835,7 @@ ol, ul {
   display: inline-block;
   zoom: 1;
   vertical-align: middle;
-}
+}*/
 /*Footer stuff end*/
 
 
