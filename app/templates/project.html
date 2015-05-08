@@ -1,10 +1,10 @@
-<div class="intro" style="background-color: {{project.backgroundColor}}; color: #fff;">
+<div class="intro" style="background-color: #00a7e1; color: #fff;">
   <div class="intro-content">
     <div class="featured-image"><img id="viewpoint-logo" src="img/viewpoint-logo.png" ></div>      
     <header class="with-image">
       <div class="header-divider" style="border-left-color: #fff">
-        <h1>Skreens</h1>
-        <h2>HTML5, CSS3, Responsive, Design, jQuery</h2>
+        <h1 class="project-title">ViewPoint Cloud</h1>
+        <h2 class="project-subtext">HTML5, CSS3, JQuery, Javascript, Ember, Handlebars</h2>
       </div>
     </header>
   </div>
@@ -12,42 +12,24 @@
 <div class="two-column group">
   <article>
     <div class="content">
-      <div id="attachment_3646" style="width: 870px" class="wp-caption aligncenter">
-        <a rel="nofollow" href="http://r3mx.com/">
-          <img src="http://ianlunn.co.uk/wp-content/uploads/remixed-screenshots.jpg" alt="The REMIXED site viewed in large and small layouts" width="860" height="544" class="size-full wp-image-3646">
-        </a>
-        <p class="wp-caption-text">The REMIXED site viewed in large and small layouts</p>
+      <div href="http://viewpointcloud.com/" class="project-banner" class="picture-container">
+          <img src="img/vpc-desktop.jpg"  class="desktop-img">
+          <img src="img/vpc-mobile.jpg"  class="mobile-img">        
       </div>
-      <p><img src="img/viewpoint-logo.png" alt="remixed-icon" width="98" height="98" class="alignleft size-full wp-image-3460"><a href="http://r3mx.com" rel="nofollow author">ViewPoint</a> is an award winning advertising agency based in Orlando USA, whom I often work with to turn designs into fully functional WordPress powered sites for their clients. This time, I was to do the same for the agencies own site.</p>
-      <p>As the digital representation of the agency, the new REMIXED site needed to match the exacting details of the provided designs, function on many different devices and browsers, be easy to update with the latest portfolio items and company information, be accessible for both users and search engines, be well optimised, and be fast to load and navigate.</p>
-      <div id="attachment_4331" style="width: 870px" class="wp-caption aligncenter">
-        <img src="https://ianlunn.co.uk/wp-content/uploads/r3mx1.gif" alt="Loading and navigation animations using AJAX for seamless page transitions" width="860" height="475" class="size-full wp-image-4331">
-        <p class="wp-caption-text">Loading and navigation animations. Using AJAX for seamless page transitions</p>
-      </div>
-      <h2>Building a Responsive Layout and Natural Experience</h2>
-      <p>Layouts were created using a “mobile-up” methodology, meaning the smallest layout was created first, and then built upon using media queries to change the layout as it grows to larger sizes. By working in this way, devices with lesser processing power (and most likely less Internet bandwidth) are doing the minimal amount of work necessary to display the page — allowing the user to navigate the site quicker. I used the open-source respond.js library to apply a fix for older browsers that don’t support media queries.</p>
-      <p><img src="http://ianlunn.co.uk/wp-content/uploads/desktop-mobile-image.jpg" alt="desktop-mobile-image" width="175" height="355" class="alignright size-full wp-image-3465"> All content images scale down to fit smaller layouts, in the case of the portfolio items however, REMIXED required the necessity to display a different image on smaller devices as the larger images lost detail when scaled down. For this I implemented a secondary “featured image” option in WordPress’ page editor. When adding a portfolio item, REMIXED can easily specify both a “featured image” and “featured image for mobile” using WordPress’ familiar interface. I implemented picturefill.js so the browser can determine exactly when to display a smaller or larger portfolio image.</p>
-      <p>Wherever possible, I made use of a devices capabilities so the user can experience the site in a way that feels most familiar and natural to the device they are using; the user can swipe their finger to navigate slides and close the fly-out mobile menu on touch devices, retina.js is used to display higher quality images on high resolution screens and so on.</p>
-      <h2>Progressive Enhancement and AJAX</h2>
-      <p>With the layout built, I then began progressively enhancing the site to add features to give the site a unique experience.</p>
-      <p>Elements such as links snap between two colours when hovered over so the user knows the element can be interacted. In supporting browsers, CSS3 transitions are used to smoothly animate between these colours. Lots of small enhancements such as this were implemented, ensuring the experience works for all browsers but is then enhanced in modern browsers that support a wider amount of features.</p>
-      <h3>AJAX</h3>
-      <p>AJAX is the biggest progressive enhancement, used to load and transition between pages, giving the site a feeling of being quicker and nicer to navigate. This changes a browser’s default behaviour, so it is important to pay special attention to the way in which it works and address the following potential user experience issues.</p>
-      <h4>Is the user aware a page is loading/has loaded?</h4>
-      <p>When a user clicks a link and the AJAX transition is initiated, the page’s existing content will fade out, then after a cosmetic delay, the new page’s content fades in. The cosmetic delay is applied to give the user enough of a chance to see the transition between pages (if it is too fast, the user may not realise the page changed, leading to frustration). On top of this, if AJAX takes longer than 1 second to retrieve the new page, the REMIXED ‘R’ logo begins to gently throb — acting as a loading indicator – to suggest an action is in process.</p>
-      <h4>Does AJAX impact or interrupt the experience in any way?</h4>
-      <p>Although AJAX changes the browser’s default behaviour, the way in which the user navigates a site is still fully intact. I made use of HTML5 pushState to change the URL and add it to the browser’s history each time a new page is loaded, allowing the user to use the back/forward buttons just as they usually would.</p>
-      <p>If AJAX is loading a page, it can be interrupted at any point to load another should the user change their mind on the page they want to visit or be navigating through the site quickly, for example.</p>
-      <p>Many of REMIXED’s pages have full-size background images, which also avoid interrupting the user’s experience. When AJAX retrieves a new page, the source of the image is preloaded and only when it is ready to be displayed, does it gracefully fade-in.</p>
-      <h4>Is the page accessible to screen readers and search engines?</h4>
-      <p>As the AJAX experience is treated as a progressive enhancement, without JavaScript enabled, pages are just as readable by both user and search engine. ARIA is used to describe the role of landmark elements such as <code>navigation</code>, <code>banner</code> and <code>main</code>, as well as <code>aria-live</code> and <code>aria-relevant</code> to specify to screen readers exactly which elements are being changed by AJAX and when.</p>
+      <p class="project-banner-caption-text">The ViewPoint Cloud site viewed in large and small layouts</p>
+      <p class="project-description">ViewPoint Cloud offers simple, flexible online permitting for citizens and officials. ViewPoint Cloud comes preloaded with the most common permits and licenses, ready to go. Create new ones in minutes with the form and workflow designers. Ditch paper forms and let citizens apply online from anywhere. Manage the entire application process from one simple online system and let citizens track every step of the way in real time. See data on permits, inspections, revenue and more. Drill down from a high-level dashboard to detailed list or map views. And export your data to Excel for easy processing.
+      </p>
+
+      <!-- <h2>Building a Responsive Layout and Natural Experience</h2> POTENTIAL TEXT
+      <p>Layouts were created using a “mobile-up” methodology, meaning the smallest layout was created first, and then built upon using media queries to change the layout as it grows to larger sizes. By working in this way, devices with lesser processing power (and most likely less Internet bandwidth) are doing the minimal amount of work necessary to display the page — allowing the user to navigate the site quicker. I used the open-source respond.js library to apply a fix for older browsers that don’t support media queries.</p> -->
+      <h2>Progressive Enhancement</h2>
+      <p class="">With the layout built, I then began progressively enhancing the site to add features to give the site a unique experience.</p>
+      <p class="">Elements such as links snap between two colours when hovered over so the user knows the element can be interacted. In supporting browsers, CSS3 transitions are used to smoothly animate between these colours. Lots of small enhancements such as this were implemented, ensuring the experience works for all browsers but is then enhanced in modern browsers that support a wider amount of features.</p>
+      <!-- POTENTIAL TEXT
       <h2>Conclusion</h2>
-      <p>The REMIXED site is a culmination of my skills, taking designs and converting them into a responsive, cross browser website, whilst maintaining the highest standard that REMIXED offer their clients.</p>
+      <p>ViewPoint Cloud is the first project where I had </p> -->
       <hr>
-      <p><a class="button action" title="Contact" href="/contact/">Hire Ian to work on your project</a></p>
+      <p><a class="button action" title="Contact" href="#contact">Hire Ian to work on your project</a></p>
     </div>
   </article>
 </div>
-<!-- <div class="project banner viewpoint-color">
-  <img class="banner logo vpc" href="img/viewpoint-logo.png">
-</div> -->
