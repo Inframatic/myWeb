@@ -1,7 +1,7 @@
 /*--NEW vv--*/
 
 .footerxl {
-  padding: 2em;
+  padding: 20px 20px 20px 88px;
   font-size: 1.2em;
   color:black;
   background-color: #f1f1f2;
@@ -301,7 +301,7 @@ header {
   top: 27%;
 }
 
-.wpcf7-submit, .form-submit, a.button {
+.wpcf7-submit, .form-submit, a.button, button.button {
   position: relative;
   display: inline-block;
   zoom: 1;
@@ -321,7 +321,7 @@ header {
   font-size: 1.4em;
 }
 
-a.button:hover {
+a.button:hover, button.button:hover {
   background-color: #4F719D;
 }
 
@@ -502,14 +502,14 @@ html h1,html h2,html h3,html h4,html h5,html h6,body h1,body h2,body h3,body h4,
 
 html p,body p {
   font-family: "Lato",sans-serif;
-  color: #636363;
+  color: black;
   font-size: 1.4em;
   line-height: 1.8;
   letter-spacing: 0.8pt;
 }
 
 html h4,body h4 {
-  color: #636363;
+  color: black;
   font-family: "Lato",sans-serif;
 }
 
