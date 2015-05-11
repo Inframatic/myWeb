@@ -52,7 +52,12 @@
   font-size: 1.4em;
 }
 
-
+#skreens-logo {
+    margin: 26px 0px 0px -8px;
+}
+#dogedots-logo {
+  height: 100px;
+}
 #viewpoint-logo {
   height: 100px;
   width: 170px;

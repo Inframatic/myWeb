@@ -9,18 +9,22 @@ angular.module('MyWeb', ['ngRoute'])
             templateUrl: '/myWebpage/app/templates/contact.html',
             controller:'MainControl'
         })
-        .when('/:linkUrl', {
-            templateUrl: '/myWebpage/app/templates/project.html',
+        // .when('/:linkUrl', { using attributes to define dynamice route :) :)
+        //     templateUrl: '/myWebpage/app/templates/project.html',
+        //     controller:'MainControl'
+        // })
+        .when('/dogedots', {
+            templateUrl: '/myWebpage/app/templates/dogedots.html',
             controller:'MainControl'
         })
-        // .when('/dogedots', {
-        //     templateUrl: '/myWebpage/app/templates/project.html',
-        //     controller:'MainControl'
-        // })
-        // .when('/skreens', {
-        //     templateUrl: '/myWebpage/app/templates/project.html',
-        //     controller:'MainControl'
-        // })
+        .when('/skreens', {
+            templateUrl: '/myWebpage/app/templates/skreens.html',
+            controller:'MainControl'
+        })
+        .when('/viewpoint', {
+            templateUrl: '/myWebpage/app/templates/viewpoint.html',
+            controller:'MainControl'
+        })
         .otherwise({
             redirectTo: '/',
             templateUrl: '/myWebpage/app/templates/portfolio.html',
