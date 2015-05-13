@@ -1,5 +1,55 @@
 /*--NEW vv--*/
 
+.about-banner {
+    margin-top: 60px;
+  position: relative;
+  display: table;
+  width: 100%;
+  background: #4F719D;
+  color: #f1f1f2;
+  text-align: center;
+}
+
+.about-banner header {
+  text-align: left;
+}
+
+.about-banner h1 {
+  margin-bottom: .1em;
+  max-width: 680px;
+  color: #f3f3f3;
+}
+.about-banner h2 {
+  padding-bottom: .2em;
+  font-size: 1.4em;
+  line-height: 120%;
+  color: #f3f3f3;
+}
+
+.about-banner .about-banner-content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: left;
+  display: table;
+}
+
+.about-banner .about-banner-content header {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  display: table-cell; 
+}
+
+@media only screen and (min-width: 981px) {
+  .about-banner .about-banner-content {
+      max-width: 1150px;
+  }
+}
+
 .uptop {
   margin-top: 6em;
 }
