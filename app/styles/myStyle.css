@@ -75,7 +75,7 @@
 
 .project-description2 {
   margin: 2em 0px 2em 0px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 #skreens-logo {
@@ -233,7 +233,12 @@ header {
     max-width: 1150px;
   }
 }
-
+ @media only screen and (max-width: 820px) {
+    .ian-steffy-signature {
+    top: 11px;
+    font-size: 1.8em !important;
+  }
+ } 
  @media only screen and (max-width: 721px) { 
   .project-banner {
     width: 100%;
@@ -247,6 +252,7 @@ header {
     right: 0;
     top: 22%;
   }
+
 
  }
 /*iphone*/
@@ -263,6 +269,10 @@ header {
     right: 0;
     top: 27%;
   }
+  .ian-steffy-signature {
+    top: 11px;
+    font-size: 1.8em !important;
+  } 
 }
 @media only screen and (min-width: 481px) {
   div .half {
@@ -273,6 +283,7 @@ header {
     margin-right: 5%;
     margin-left: 0;
   }
+
 }
 
 #contact-section {
@@ -395,7 +406,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .item, article, .back-to-top, .note, .subtitle, .date, .posts .title, .right-column, a[rel~="tag"], .footer .links {
-  font-family: "Lato",sans-serif;
+  font-family: "Lato";
 }
 
 .featured.work li {
@@ -510,14 +521,19 @@ html,body {
   -webkit-overflow-scrolling: touch;
 }
 
+h2 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
 html h1,html h2,html h3,html h4,html h5,html h6,body h1,body h2,body h3,body h4,body h5,body h6 {
   font-family: "Lato",sans-serif;
 }
 
 html p,body p {
-  font-family: "Lato",sans-serif;
+  font-family: "Lato",sans-serif !important;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1.8;
   letter-spacing: 0.8pt;
 }
@@ -533,13 +549,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+/*  font: inherit;*/
   vertical-align: baseline;
 }
 
 .pitch-text {
-  font-weight:400;
-  font-size: 16px;
+  /*font-weight:400;*/
+  /*font-size: 16px;*/
 }
 
 .city-selection-box-large .city-text {
@@ -639,7 +655,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #image-scroll-wrapper {
   position: relative;
   width: 100%;
-  height: 70px;
+  height: 88px;
   margin: 20px 0px 20px 0px;
 }
 
@@ -719,172 +735,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
-
-/*Footer stuff*/
-/*@media only screen and (min-width: 981px) {
-  .footer.group nav.third:nth-child(3n+3) {
-  margin: 0;
-  }
-  .links {
-    margin-bottom: 4em;
-  }
-  .third {
-  display: inline-block;
-  zoom: 1;
-  vertical-align: top;
-  width: 30%;
- }
- .third:nth-child(3n+2) {
-  margin-left: 5%;
-  margin-right: 5%;
-  }
-}
-@media only screen and (min-width: 681px) {
-  .footer.group nav.third {
-  margin-bottom: .4em;
-  }
-  .social-links .rss {
-  display: block;
-  }
-  .footer.group {
-    padding-top: 4em;
-  }
-  .footer.group .links {
-  max-width: 100%;
-  }
-  .third {
-  display: inline-block;
-  zoom: 1;
-  vertical-align: top;
-  width: 45%;
-  }
-  .third:nth-child(3n+2) {
-    margin-left: 5%;
-  }
-  .social-links {
-  border-bottom: 0;
-  }
-  .social-links .icon.social {
-  margin: 0 10px 0 0;
-  }
-  .social-links .icon.social, .social-links p {
-  display: inline-block;
-  zoom: 1;
-  vertical-align: middle;
-  }
-}
-@media only screen and (min-width: 581px){
-  .back-to-top {
-    text-align: right;
-  }
-}
-
-.social-links li {
-  display: inline-block;
-  zoom: 1;
-  vertical-align: middle;
-  padding: 0 10px;
-}
-.social-links li, .social-links dd {
-  margin-bottom: 1.6em;
-}
-.icon.github {
-  background-position: -96px 0;
-}
-.social-links .icon.social {
-  display: block;
-  height: 32px;
-  width: 32px;
-  margin: 0 auto 10px auto;
-}
-.icon.twitter {
-  background-position: -97px -37px;
-}
-.back-to-top:before, .button:after, .form-submit:after, .icon.social, .newer-posts:before, .older-posts:after {
-  background-image: url("/wp-content/themes/ianlunn2015/images/sprites.png");
-  background-repeat: no-repeat;
-}
-.icon {
-  background-color: transparent;
-  overflow: hidden;
-}
-.footer.group li, .footer.group dd {
-  margin-bottom: 1.6em;
-}
-ol, ul {
-  list-style: none;
-}
-.third {
-  display: block;
-  width: 100%;
-}
-.social-links {
-  margin-bottom: 4em;
-  margin: 0 auto;
-  text-align: center;
-}
-.footer .social-links {
-  font-size: .875em;
-}
-.footer.group .bio p {
-  margin-bottom: 1em;
-}
-.footer.group .avatar img {
-  margin: 0;
-}
-.avatar img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: .8em;
-  border: black solid 4px;
-}
-.back-to-top {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .875em;
-}
-.footer.group .links {
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer.group {
-  position: relative;
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 2em 20px 20px 20px;
-  font-family: "jaf-bernino-sans-narrow-1","jaf-bernino-sans-narrow-2","Calibri",Arial,sans-serif;
-}
-.footer.group .third {
-  margin-bottom: 2em;
-}
-.footer.group .avatar {
-  float: left;
-  margin-right: 14px;
-  margin-bottom: 4px;
-}
-.footer {
-  color: white;
-}
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-.footer.group .back-to-top {
-  position: absolute;
-  top: -40px;
-  right: 20px;
-}
-.footer.group .back-to-top, .footer.group .back-to-top:before {
-  display: inline-block;
-  zoom: 1;
-  vertical-align: middle;
-}*/
-/*Footer stuff end*/
-
-
-/*--NEW ^^--*/
 
 
 
@@ -6859,13 +6709,13 @@ p aside {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Lato",sans-serif;
-  font-weight: normal;
+/*  font-weight: normal;
   font-style: normal;
-  color: #222222;
+*/  color: #222222;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small {
@@ -6930,7 +6780,7 @@ small {
 }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  
   font-weight: normal;
   color: #333333;
   background-color: white;
@@ -7118,7 +6968,7 @@ blockquote,blockquote p {
   background-color: #efefef;
   color: #222222;
   padding: 1rem 2rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  
   font-size: 1rem;
 }
 
@@ -7335,7 +7185,7 @@ blockquote,blockquote p {
 }
 
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.063em)/";
+  /*font-family: "/only screen and (min-width:40.063em)/";*/
   width: 40.063em;
 }
 
@@ -7379,7 +7229,7 @@ meta.foundation-mq-topbar {
   height: 70px;
   line-height: 70px;
   position: relative;
-  background: white;
+  background: #f3f3f3;
   margin-bottom: 0;
 }
 
@@ -7539,7 +7389,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 23.3333333333px;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  
   font-size: 0.8125rem;
   font-weight: normal;
   text-transform: none;
@@ -9131,7 +8981,7 @@ button::-moz-focus-inner {
   color: white;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  
 }
 
 .mfp-close:active {
@@ -9777,7 +9627,7 @@ img.mfp-img {
   line-height: 3;
   text-align: center;
   color: black;
-  font-family: "gotham";
+  
   font-size: 20px;
   border-bottom: 3px solid #efefef;
   margin-top: -1px;
@@ -9868,7 +9718,7 @@ textarea {
 .page-title {
   position: relative;
   font-size: 40px;
-  font-family: "gotham med";
+  
   z-index: 6;
   margin-top: 75px;
 }
@@ -9985,7 +9835,7 @@ textarea {
   width: 996px;
   top: 50px;
   z-index: 1;
-  font-family: "gotham med";
+
 }
 
 @media only screen and (max-width: 64.063em) {
@@ -10017,7 +9867,7 @@ textarea {
 
 #why-code-wrapper .text-section h4 {
   color: #636363;
-  font-family: "tisapro medi";
+
 }
 
 #why-attend-wrapper {
@@ -10032,7 +9882,7 @@ textarea {
 #why-attend-wrapper h4 {
   position: relative;
   color: #636363;
-  font-family: "tisapro medi";
+
   margin-bottom: 30px;
 }
 
@@ -10326,7 +10176,7 @@ textarea {
   z-index: 1000;
   top: 57%;
   border: solid white;
-  font-family: "tisapro Medi";
+  
   height: 40px;
   width: 61%;
   line-height: 2;
@@ -10340,7 +10190,7 @@ textarea {
   position: absolute;
   color: white;
   z-index: 1000;
-  font-family: "gotham";
+ 
   height: 40px;
   width: 70%;
   line-height: 2;
@@ -10360,7 +10210,7 @@ textarea {
   height: 40px;
   margin-left: 45%;
   margin-right: 45%;
-  font-family: "gotham bold";
+
   text-align: center;
   line-height: 1.3;
   font-size: 30px;
@@ -10436,7 +10286,7 @@ textarea {
 
 .bx-wrapper .bx-pager {
   font-size: .85em;
-  font-family: Arial;
+
   font-weight: bold;
   color: #666;
   padding-top: 20px;
@@ -10598,7 +10448,7 @@ textarea {
 
 .bx-wrapper .bx-caption span {
   color: #fff;
-  font-family: Arial;
+
   display: block;
   font-size: .85em;
   padding: 10px;
@@ -10636,12 +10486,12 @@ textarea {
 
 #choose-your-city-wrapper h3 {
   text-align: center;
-  font-family: "gotham med";
+  
 }
 
 #choose-your-city-wrapper h4 {
   text-align: center;
-  font-family: "tisapro medi";
+ 
   color: #636363;
 }
 
@@ -10768,14 +10618,14 @@ textarea {
   line-height: 2;
   font-size: 20px;
   color: white;
-  font-family: "gotham med";
+
   margin-top: 10px;
 }
 
 #choose-your-city-wrapper .city-box h5 {
   text-align: center;
   color: white;
-  font-family: "gotham med";
+  
 }
 
 #choose-your-city-wrapper .selector {
@@ -10826,50 +10676,6 @@ textarea {
   margin-left: -505px;
 }
 
-#html-tour .circle-logo {
-  position: absolute;
-  top: 180px;
-  left: 208px;
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  border-radius: 100px;
-}
-
-#html-tour .circle-logo img {
-  margin: 25%;
-}
-
-#html-tour button {
-  height: 150px;
-}
-
-#html-tour .text-block {
-  position: relative;
-  width: 50%;
-  top: 15%;
-  font-family: "tisapro medi";
-  float: right;
-  right: 18%;
-}
-
-#html-tour p {
-  font-size: 1.2em;
-  width: 690px;
-}
-
-#html-tour .registration-button {
-  position: relative;
-  right: -38%;
-  border-radius: 5px;
-  top: 135px;
-  height: 50px;
-  font-size: 12px;
-  margin-right: 350px;
-  background: #58585b;
-  color: white;
-  border: solid #58585b;
-  font-family: "gotham med";
 }
 
 #html-tour .registration-button:hover {
@@ -10891,7 +10697,6 @@ textarea {
 
   #schedule-wrapper h2 {
     position: relative;
-    font-family: "gotham med";
     padding-top: 95px;
   }
 
@@ -11023,14 +10828,12 @@ textarea {
   #schedule-wrapper h3 {
     position: relative;
     text-align: center;
-    font-family: "gotham med";
     width: 100%;
     padding-top: 50px;
   }
 
   #schedule-wrapper p {
     text-align: center;
-    font-family: "tisapro medi";
     color: #636363;
     font-size: 15px;
   }
@@ -11201,7 +11004,6 @@ textarea {
   background-color: transparent;
   border-radius: 2.5px;
   font-size: 10px;
-  font-family: "gotham med";
   padding: 0;
 }
 
@@ -11318,7 +11120,7 @@ textarea {
   background-color: transparent;
   border-radius: 2.5px;
   font-size: 10px;
-  font-family: "gotham med";
+  
   padding: 0;
 }
 
@@ -11403,7 +11205,7 @@ textarea {
   }
 
   #venue-information-box .when-text {
-    font-family: "tisapro reg";
+
     line-height: 1.5;
   }
 
@@ -11411,7 +11213,7 @@ textarea {
     position: relative;
     top: 25px;
     line-height: 1.5;
-    font-family: "tisapro reg";
+  
   }
 
   #venue-information-box h3 {
@@ -11474,29 +11276,6 @@ textarea {
     overflow: auto;
   }
 
-  #formatted-date {
-    position: relative;
-    text-align: right;
-    float: left;
-    width: 32%;
-    top: 50px;
-    font-size: 15pt;
-    font-family: 'gotham';
-    color: white;
-    text-align: center;
-  }
-
-  #venue {
-    position: relative;
-    text-align: left;
-    float: right;
-    top: 50px;
-    width: 32%;
-    font-size: 15pt;
-    font-family: 'gotham';
-    color: white;
-    text-align: center;
-  }
 
   #countdown-box {
     float: center;
@@ -11509,7 +11288,7 @@ textarea {
     text-align: center;
     display: inline-block;
     width: 25%;
-    font-family: 'gotham bold';
+
     font-size: 28pt;
     color: white;
   }
@@ -11517,7 +11296,7 @@ textarea {
   .text-box {
     font-size: 15pt;
     margin-top: -1px;
-    font-family: 'tisapro medi';
+    
     letter-spacing: 1.3px;
   }
 
@@ -11553,7 +11332,7 @@ textarea {
     margin-top: -11px;
     top: 200px;
     font-size: 15pt;
-    font-family: 'gotham';
+    
     color: white;
     text-align: center;
   }
@@ -11563,7 +11342,7 @@ textarea {
     width: 100%;
     top: 136px;
     font-size: 15pt;
-    font-family: 'gotham';
+    
     color: white;
     text-align: center;
     float: left;
@@ -11580,7 +11359,7 @@ textarea {
     text-align: center;
     display: inline-block;
     width: 25%;
-    font-family: 'gotham bold';
+    
     font-size: 35pt;
     color: white;
   }
@@ -11588,7 +11367,7 @@ textarea {
   .text-box {
     font-size: 18pt;
     margin-top: -2px;
-    font-family: 'tisapro medi';
+    
   }
 
   .colons-seperators {
@@ -11684,7 +11463,7 @@ textarea {
 
 #city-article-text-wrapper #article-header {
   text-align: left;
-  font-family: "gotham med";
+  
   line-height: 1.5;
   padding-top: 34px;
   margin-left: 13%;
@@ -11715,7 +11494,7 @@ textarea {
 #registration_button {
   position: initial;
   border-radius: 5px;
-  font-family: "gotham med";
+  
   padding-top: 18px;
   width: 200px;
   font-size: 14px;
@@ -11792,7 +11571,7 @@ textarea {
 
 .partners-text-wrapper .text-wrapper .partners-text {
   text-align: center;
-  font-family: "tisapro reg";
+  
   font-size: 19px;
   line-height: 29px;
   letter-spacing: 0.3;
@@ -11818,7 +11597,7 @@ textarea {
   font-size: 27px;
   text-align: center;
   color: white;
-  font-family: "gotham med";
+  
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -11878,7 +11657,7 @@ textarea {
   font-size: 19px;
   line-height: 29px;
   letter-spacing: 0.3;
-  font-family: "tisapro reg";
+  
 }
 
 #city-partners-listing .partner-list {
@@ -12064,7 +11843,7 @@ textarea {
 
 #blogs-wrapper .blogs-block .content-wrapper #blogs-title {
   text-align: center;
-  font-family: "gotham med";
+  
   color: #636363;
   font-size: 20px;
   margin-top: 25px;
@@ -12074,7 +11853,7 @@ textarea {
   overflow: hidden;
   color: #808282;
   height: 150px;
-  font-family: "tisapro reg";
+  
   margin-top: 15px;
   text-overflow: ellipsis;
 }
@@ -12089,7 +11868,7 @@ textarea {
   right: 0;
   line-height: 2;
   text-align: center;
-  font-family: "gotham med";
+  
   background: #ff6622;
   color: white;
   padding: 5px;
@@ -12116,7 +11895,7 @@ textarea {
 }
 
 #article-wrapper h1 {
-  font-family: "gotham med";
+
   text-align: center;
   margin-top: 50px;
   font-size: 33px;
@@ -12125,13 +11904,13 @@ textarea {
 #article-wrapper h2 {
   color: #ff6622;
   text-align: center;
-  font-family: "gotham";
+
   margin-top: -7px;
   font-size: 27px;
 }
 
 #article-wrapper h5 {
-  font-family: "tisapro";
+
   color: #808282;
 }
 
@@ -12163,7 +11942,7 @@ textarea {
   width: 12px;
   float: left;
   margin-right: 67px;
-  font-family: "gotham";
+  
   color: #808282;
 }
 
@@ -12179,7 +11958,7 @@ textarea {
   position: relative;
   float: right;
   color: white;
-  font-family: "gotham med";
+  
   border: solid #ff6622;
   background-color: #ff6622;
   padding-right: 20px;
@@ -12246,7 +12025,7 @@ textarea {
 
 .accordion .content p {
   color: #58585A;
-  font-family: "tisapro medi";
+  
   font-size: 17px;
 }
 
@@ -12403,7 +12182,7 @@ textarea {
   background-color: #8EB24E;
   border: none;
   color: white;
-  font-family: "gotham light";
+  
   font-size: 14px;
   padding: 2%;
   padding-left: 1%;
@@ -12501,7 +12280,7 @@ textarea {
 
 .container h2 {
   display: block;
-  font-family: gotham med;
+
   font-size: 24pt;
   margin-top: 75px;
   margin-bottom: 0;
@@ -12511,7 +12290,7 @@ textarea {
 }
 
 .container p {
-  font-family: tisapro medi;
+
   color: #58585B;
 }
 
@@ -12575,7 +12354,7 @@ textarea {
   background: #A2D043;
   color: #FFF;
   font-size: 10pt;
-  font-family: Gotham;
+
   letter-spacing: 1.5px;
   margin-top: 29px;
   width: 225px;
@@ -12620,7 +12399,7 @@ textarea {
   border-color: #3A3A3C;
   width: 140px;
   height: 40px;
-  font-family: gotham med;
+  
   font-size: 16pt;
 }
 
@@ -12644,7 +12423,7 @@ textarea {
   background-color: transparent;
   border-radius: 4px;
   font-size: 11pt;
-  font-family: "gotham med";
+
   padding: 0;
 }
 
@@ -12709,7 +12488,7 @@ textarea {
   background-color: transparent;
   border-radius: 4px;
   font-size: 12px;
-  font-family: "gotham med";
+
   padding: 0;
 }
 
@@ -12732,7 +12511,7 @@ textarea {
   background-color: #F06522;
   color: #FFF;
   font-size: 19px;
-  font-family: Gotham;
+
   color: white;
   width: 38%;
   height: 100%;
@@ -12767,14 +12546,14 @@ textarea {
 }
 
 .container p {
-  font-family: gotham;
+ 
   font-size: 20px;
   color: #666666;
 }
 
 .container .big_or {
   font-size: 36px;
-  font-family: gotham med;
+
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -12782,13 +12561,13 @@ textarea {
 }
 
 .container .twitter {
-  font-family: gotham med;
+ 
   font-weight: bold;
   color: #61B0E2;
 }
 
 .container .facebook {
-  font-family: gotham med;
+
   font-weight: bold;
   color: #3472BA;
 }
@@ -12800,7 +12579,7 @@ textarea {
 }
 
 #registration-wrapper form p {
-  font-family: 'tisapro reg';
+
   font-size: 1.2em;
 }
 
@@ -13021,7 +12800,7 @@ textarea {
   border: 4px solid #ff6622;
   border-radius: 3px;
   color: #fff;
-  font-family: "gotham med";
+ 
   font-size: 15px;
   margin-bottom: 20px;
 }
@@ -13029,7 +12808,7 @@ textarea {
 #volunteer-wrapper form p {
   margin-bottom: 5px;
   font-size: 13px;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ 
 }
 
 #volunteer-wrapper form .fix-first-name {
@@ -13053,7 +12832,7 @@ textarea {
 }
 
 #volunteer-wrapper ul li {
-  font-family: "tisapro reg";
+  
   color: #636363;
   font-size: 16px;
   line-height: 1.8;
@@ -13085,7 +12864,7 @@ textarea {
 .text {
   position: absolute;
   font-size: 60px;
-  font-family: "gotham bold";
+
   z-index: 1;
 }
 
