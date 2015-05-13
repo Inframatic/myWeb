@@ -31,12 +31,16 @@ angular.module('MyWeb', ['ngRoute'])
             controller:'MainControl'
         })
   }])
-  .controller('MainControl', function($scope, $routeParams){
+  .controller('MainControl', function($scope, $routeParams, $anchorScroll){
       $scope.linkUrl=$routeParams.linkUrl;
       $scope.name = 'Ian Steffy';
       $scope.projects = [
         { "id": 0, "linkUrl": "skreens", "title": "Skreens", "imgUrl": "img/skreensTV.png", "description": "HTML5, CSS3, Responsive, Design, jQuery", "backgroundColor" : "#000"},
         { "id": 2, "linkUrl": "viewpoint", "title": "ViewPoint Cloud", "imgUrl": "img/viewpoint-logo.png", "description": "HTML5, CSS3, JQuery, Javascript, Ember, Handlebars", "backgroundColor" : "#00a7e1"},
         { "id": 1, "linkUrl": "dogedots", "title": "Doge Dots", "imgUrl": "img/dogedots-logo.png", "description": "Design, XCode, Responsive, ASO, Animation, IOS App Publishing ", "backgroundColor" : "#eee"}
-      ]
+      ];
+      $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+      }
   })
