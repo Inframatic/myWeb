@@ -6,7 +6,34 @@
   margin-right: auto;
   max-width: 720px;
 }
-
+article .content .logos {
+  max-width: 420px;
+  margin-top: 1.8em;
+}
+article .content .logos .logo:first-child {
+  margin-left: 0;
+}
+article .content .logos .logo {
+  display: inline-block;
+  zoom: 1;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  margin-left: 10%;
+  max-width: 25%;
+}
+article .content .logos .logo img {
+  margin: 0 auto .4em auto;
+  max-width: 100%;
+  width: auto;
+}
+article .content img {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  text-align: center;
+}
 .about-banner {
     margin-top: 60px;
   position: relative;
@@ -125,6 +152,7 @@ a {
 .author.group .bio-info {
   margin-bottom: 1em;
 }
+
 @media only screen and (min-width: 981px) {
   .content {
     margin-left: 0;
@@ -132,8 +160,8 @@ a {
   .about-banner .about-banner-content {
       max-width: 1150px;
   }
-  .two-column .group {
-  max-width: 1150px;
+  .two-column {
+  max-width: 1150px ;
   }
   .right-column {
     float: right;
@@ -458,7 +486,9 @@ header {
     margin-right: 5%;
     margin-left: 0;
   }
-
+  .page article .logos .logo, .single article .logos .logo {
+    font-size: 1em;
+  }
 }
 
 #contact-section {
