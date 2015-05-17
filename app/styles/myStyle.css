@@ -152,10 +152,15 @@ a {
 .author.group .bio-info {
   margin-bottom: 1em;
 }
-
+  .left-column {
+    width: 100%;
+  }
 @media only screen and (min-width: 981px) {
   .content {
     margin-left: 0;
+  }
+  .left-column {
+    width: 642px;
   }
   .about-banner .about-banner-content {
       max-width: 1150px;
@@ -187,7 +192,13 @@ a {
     margin-right: auto;
   }  
 }
+@media only screen and (min-width:781px){
+  .left-column {
+    width: 57%;
+  }
+}
 @media only screen and (min-width: 681px){
+
   .author.group {
     display: table;
   }
@@ -203,15 +214,22 @@ a {
     vertical-align: middle;
   }
 }
+
+@media only screen and (max-width: 480px){
+  .left-column {
+    width: auto;
+  }
+}
+
 .uptop {
   margin-top: 6em;
 }
 
 .footerxl {
-  padding: 20px 20px 20px 88px;
+  padding: 20px 20px 20px 20px;
   font-size: 1.2em;
   color:black;
-  min-height: 114px;
+  min-height: 140px;
   background-color: #f3f3f3;
 }
 
@@ -456,7 +474,13 @@ header {
     right: 0;
     top: 22%;
   }
-
+  .footerxl {
+    padding: 20px 20px 20px 88px;
+    font-size: 1.2em;
+    color: black;
+    min-height: 184px;
+    background-color: #f3f3f3;
+  }
 
  }
 /*iphone*/
@@ -846,7 +870,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .ian-steffy-signature {
   position: absolute;
-  left: 30px;
+  /*left: 30px;*/
 
   font-size:2em;
   font-family: "Lato",sans-serif;
@@ -6642,7 +6666,7 @@ table thead {
 
 table thead tr th,table thead tr td {
   padding: 0.5rem 0.625rem 0.625rem;
-  /*font-size: 0.875rem;*/
+  font-size: 1.2em;
   font-weight: bold;
   color: #333;
 }
@@ -6653,25 +6677,25 @@ table tfoot {
 
 table tfoot tr th,table tfoot tr td {
   padding: 0.5rem 0.625rem 0.625rem;
-  /*font-size: 0.875rem;*/
+  font-size: 1.2em;
   font-weight: bold;
   color: #333;
 }
 
 table tr th,table tr td {
   padding: 0.5625rem 0.625rem;
-  /*font-size: 0.875rem;*/
+  font-size: 1.2em;
   color: #333;
   text-align: left;
 }
 
 table tr.even,table tr.alt,table tr:nth-of-type(even) {
-  background: #f9f9f9;
+  background: #f3f3f3;
 }
 
 table thead tr th,table tfoot tr th,table tfoot tr td,table tbody tr th,table tbody tr td,table tr td {
   display: table-cell;
-  line-height: 1.125rem;
+  line-height: 1.625rem;
   padding-left: 30px;
 }
 
@@ -9555,7 +9579,7 @@ img.mfp-img {
     position: absolute;
     height: 100%;
     width: 469px;
-    left: 5%;
+    /*left: 5%;*/
   }
 
   #nav-image .lighthouse_image {
