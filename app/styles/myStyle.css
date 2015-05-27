@@ -237,7 +237,7 @@ a {
   padding: 20px 20px 20px 20px;
   font-size: 1.2em;
   color:black;
-  min-height: 140px;
+  min-height: 180px;
   background-color: #f3f3f3;
 }
 
@@ -252,7 +252,7 @@ a {
   font-size: 1.2em;
   font-weight: 500;
   color: white;
-  /*text-transform: uppercase;*/
+  text-transform: none;
 }
 
 .picture-container {
@@ -360,7 +360,7 @@ article .content .wpcf7 p {
 }
 
 
-/*lunn*/
+/*steffy*/
 .intro.front {
   display: table;
   width: 100%;
@@ -489,7 +489,7 @@ header {
     padding: 20px 20px 20px 88px;
     font-size: 1.2em;
     color: black;
-    min-height: 184px;
+    min-height: 200px;
     background-color: #f3f3f3;
   }
 
@@ -516,7 +516,7 @@ header {
     padding: 20px 20px 20px 88px;
     font-size: 1.2em;
     color:black;
-    min-height: 184px;
+    min-height: 240px;
     background-color: #f3f3f3;
   }
 }
@@ -13127,14 +13127,6 @@ textarea {
   }
 }
 
-
-
-
-
-
-/*lunn below*/
-
-/*lunn end*/
 
 
 
