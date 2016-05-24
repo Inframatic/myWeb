@@ -2,11 +2,11 @@ angular.module('MyWeb', ['ngRoute'])
   .config( ['$routeProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/portfolio', {
-            templateUrl: '/myWebpage/app/templates/portfolio.html',
+            templateUrl: '/templates/portfolio.html',
             controller:'MainControl'
         })
         .when('/contact', {
-            templateUrl: '/myWebpage/app/templates/contact.html',
+            templateUrl: '/templates/contact.html',
             controller:'MainControl'
         })
         // .when('/:linkUrl', { using attributes to define dynamice route :) :)
@@ -14,37 +14,35 @@ angular.module('MyWeb', ['ngRoute'])
         //     controller:'MainControl'
         // })
         .when('/dogedots', {
-            templateUrl: '/myWebpage/app/templates/dogedots.html',
+            templateUrl: '/templates/dogedots.html',
             controller:'MainControl'
         })
         .when('/skreens', {
-            templateUrl: '/myWebpage/app/templates/skreens.html',
+            templateUrl: '/templates/skreens.html',
             controller:'MainControl'
         })
         .when('/viewpoint', {
-            templateUrl: '/myWebpage/app/templates/viewpoint.html',
+            templateUrl: '/templates/viewpoint.html',
             controller:'MainControl'
         })
         .when('/about', {
-            templateUrl: '/myWebpage/app/templates/about.html',
+            templateUrl: '/templates/about.html',
             controller:'MainControl'
-        })        
+        })    
         .otherwise({
             redirectTo: '/',
-            templateUrl: '/myWebpage/app/templates/portfolio.html',
+            templateUrl: '/templates/portfolio.html',
             controller:'MainControl'
         })
   }])
-  .controller('MainControl', function($scope, $routeParams, $anchorScroll){
+  .controller('MainControl', function($scope, $routeParams){
       $scope.linkUrl=$routeParams.linkUrl;
       $scope.name = 'Ian Steffy';
       $scope.projects = [
         { "id": 0, "linkUrl": "skreens", "title": "Skreens", "imgUrl": "img/skreensTV.png", "description": "HTML5, CSS3, Responsive, Design, jQuery", "backgroundColor" : "#000"},
-        { "id": 2, "linkUrl": "viewpoint", "title": "ViewPoint Cloud", "imgUrl": "img/viewpoint-logo.png", "description": "HTML5, CSS3, jQuery, JavaScript, Ember.js, Handlebars", "backgroundColor" : "#00a7e1"},
-        { "id": 1, "linkUrl": "dogedots", "title": "Doge Dots", "imgUrl": "img/dogedots-logo.png", "description": "Design, Xcode, Responsive, ASO, Animation, IOS App Publishing ", "backgroundColor" : "#333"}
-      ];
-      $scope.scrollTo = function(id) {
-        $location.hash(id);
-        $anchorScroll();
-      }
+        { "id": 2, "linkUrl": "viewpoint", "title": "ViewPoint Cloud", "imgUrl": "img/viewpoint-logo.png", "description": "HTML5, CSS3, JQuery, JavaScript, Ember, Handlebars", "backgroundColor" : "#00a7e1"},
+        { "id": 1, "linkUrl": "dogedots", "title": "Doge Dots", "imgUrl": "img/dogedots-logo.png", "description": "Design, XCode, Responsive, ASO, Animation, IOS App Publishing ", "backgroundColor" : "#333"},
+        { "id": 3, "linkUrl": "meventi", "title": "meventi", "imgUrl": "img/meventi-logo.png", "description": "PHP, LESS, CSS3, jQuery, version control, HTML5, JavaScript, Design, Git, Github, Responsive ", "backgroundColor" : "#333"}
+        { "id": 4, "linkUrl": "meventivr", "title": "meventi VR", "imgUrl": "img/vr-logo.png", "description": "Angular.js, XML, krpano, version control, three.js, HTML5, CSS3, JavaScript, Git, Github", "backgroundColor" : "#222222"}
+      ]
   })
