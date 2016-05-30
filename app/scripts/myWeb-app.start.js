@@ -50,7 +50,7 @@ angular.module('MyWeb', ['ngRoute'])
         { "id": 0, "linkUrl": "skreens", "title": "Skreens", "imgUrl": "img/skreensTV.png", "description": "HTML5, CSS3, Responsive, Design, jQuery", "backgroundColor" : "#000"},
         { "id": 2, "linkUrl": "viewpoint", "title": "ViewPoint Cloud", "imgUrl": "img/viewpoint-logo.png", "description": "HTML5, CSS3, JQuery, JavaScript, Ember, Handlebars", "backgroundColor" : "#00a7e1"},
         { "id": 1, "linkUrl": "dogedots", "title": "Doge Dots", "imgUrl": "img/dogedots-logo.png", "description": "Design, XCode, Responsive, ASO, Animation, IOS App Publishing ", "backgroundColor" : "#333"},
-        { "id": 3, "linkUrl": "meventi", "title": "meventi", "imgUrl": "img/meventi-logo.png", "description": "PHP, LESS, CSS3, jQuery, Photoshop, version control, HTML5, JavaScript, Design, Git, Github, Responsive ", "backgroundColor" : "#333"}
-        { "id": 4, "linkUrl": "vjuboxvr", "title": "Vjubox VR", "imgUrl": "img/vr-logo.png", "description": "Angular.js, XML, krpano, version control, three.js, HTML5, CSS3, JavaScript, Git, Github, Photoshop , Responsive", "backgroundColor" : "#222222"}
+        { "id": 3, "linkUrl": "meventi", "title": "meventi", "imgUrl": "img/meventi-logo.png", "description": "PHP, LESS, CSS3, jQuery, Photoshop, version control, HTML5, JavaScript, Design, Git, Github, Responsive ", "backgroundColor" : "#333"},
+        { "id": 4, "linkUrl": "vr", "title": "Vjubox VR", "imgUrl": "img/vr-logo.png", "description": "Angular.js, XML, krpano, version control, three.js, HTML5, CSS3, JavaScript, Git, Github, Photoshop , Responsive", "backgroundColor" : "#222222"}
       ]
   })
